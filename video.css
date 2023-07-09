@@ -1,0 +1,126 @@
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 50px;
+  column-gap: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.video-tittle {
+  font-size: 14px;
+  margin-top: 0;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+.video-author {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+.video-status {
+  margin-top: 0;
+}
+.video-author,
+.video-status {
+  color: rgb(96, 96, 96);
+  font-size: 12px;
+}
+.thumbnail {
+  width: 100%;
+  border-radius: 2px;
+}
+.video-previews {
+  z-index: 100;
+  display: inline-block;
+}
+.thumbnail-group {
+  margin-bottom: 10px;
+  border-radius: 2px;
+  position: relative;
+}
+.time {
+  font-size: 12px;
+  position: absolute;
+  background-color: black;
+  color: white;
+  right: 5px;
+  bottom: 8px;
+  padding: 4px;
+  border-radius: 2px;
+  z-index: 200;
+}
+.chanel-pic {
+  width: 50px;
+  vertical-align: top;
+}
+.video-info {
+  margin-left: 0px;
+  pointer-events: none;
+}
+.profile-pic {
+  width: 40px;
+  border-radius: 30px;
+  margin-right: 0;
+}
+.container {
+  position: relative;
+  width: 2300px;
+  
+}
+.container .toolship{
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+}
+.container:hover .toolship{
+  opacity: 1;
+  cursor: pointer;
+}
+.right-sections {
+  margin-left: 10px;
+}
+.pic-hover {
+  width: 50px;
+  border-radius: 25px;
+}
+.pic-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.sub-count {
+  font-size: 14px;
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .video-tittle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .video-status {
+    font-size: 14px;
+  }
+}
+@media (min-width: 701px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
